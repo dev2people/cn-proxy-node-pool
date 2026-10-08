@@ -1,0 +1,75 @@
+name: Check China Proxies
+
+on:
+  schedule:
+    # 每天每 6 小时自动运行一次 (UTC 0:00, 6:00, 12:00, 18:00)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      concurrency:
+        description: '检测并发数 (默认 32)'
+        required: false
+        default: '32'
+      timeout:
+        description: '超时时间 (秒，默认 5)'
+        required: false
+        default: '5'
+      policy:
+        description: '判定策略 (any: 至少通过1个测试; all: 需全部通过4个测试)'
+        required: false
+        default: 'any'
+        type: choice
+        options:
+          - any
+          - all
+
+permissions:
+  contents: write
+
+jobs:
+  check-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python 运行环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: 安装 Python 依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 获取最新原始节点数据
+        run: |
+          mkdir -p input-raw-data filter-data
+          if [ -f 0-get-raw-node1.sh ]; then
+            chmod +x 0-get-raw-node1.sh
+            bash 0-get-raw-node1.sh
+          fi
+
+      - name: 运行中国代理连通性检测
+        env:
+          CONCURRENCY: ${{ github.event.inputs.concurrency || '32' }}
+          TIMEOUT: ${{ github.event.inputs.timeout || '5' }}
+          SUCCESS_POLICY: ${{ github.event.inputs.policy || 'any' }}
+        run: |
+          python main.py
+
+      - name: 提交并推送到仓库
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add filter-data/
+          if git diff --staged --quiet; then
+            echo "节点列表无变化，跳过提交"
+          else
+            NODE_COUNT=$(grep -c '^[a-zA-Z0-9]' filter-data/allnode-url.txt || echo 0)
+            git commit -m "chore(node-pool): auto update china proxy nodes (alive: ${NODE_COUNT}) [skip ci]"
+            git push
+          fi
