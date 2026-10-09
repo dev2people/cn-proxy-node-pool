@@ -282,11 +282,13 @@ async def check_node(
     semaphore: asyncio.Semaphore,
     timeout: float,
     policy: str,
+    check_gfw: bool,
     progress_counter: Dict[str, int],
     total_count: int,
 ) -> Optional[Dict[str, Any]]:
     """
-    Runs handshake check followed by 4 target HTTP connectivity tests.
+    Runs handshake check followed by 4 target HTTP connectivity tests,
+    and optionally verifies that the node is behind the GFW (Google access MUST fail).
     """
     async with semaphore:
         proxy_url = candidate.url
@@ -320,6 +322,7 @@ async def check_node(
 
         client_timeout = aiohttp.ClientTimeout(total=timeout, connect=timeout)
         target_results: Dict[str, Any] = {}
+        gfw_info: Optional[Dict[str, Any]] = None
 
         try:
             async with aiohttp.ClientSession(connector=connector, timeout=client_timeout) as session:
@@ -337,37 +340,82 @@ async def check_node(
                         }
                     else:
                         logger.debug(f"Target test exception for {proxy_url}: {res}")
+
+                passed_targets = [k for k, v in target_results.items() if v.get("success")]
+                passed_count = len(passed_targets)
+
+                # Evaluate connectivity condition
+                if policy == "all":
+                    is_connected = (passed_count == len(TARGETS))
+                else:  # default 'any'
+                    is_connected = (passed_count > 0)
+
+                if not is_connected:
+                    logger.debug(f"❌ [未通过] {proxy_url} 握手成功但所有HTTP测试均未通过")
+                    return None
+
+                progress_counter["connected"] += 1
+
+                # Step 3: GFW Verification (Access to https://www.google.com/generate_204 MUST FAIL)
+                if check_gfw:
+                    gfw_url = "https://www.google.com/generate_204"
+                    g_start = time.monotonic()
+                    google_accessible = False
+                    google_status = None
+                    google_error = None
+                    try:
+                        async with session.get(gfw_url, allow_redirects=False) as resp:
+                            google_status = resp.status
+                            # If status is 200 or 204, Google was reached
+                            if resp.status in (200, 204):
+                                google_accessible = True
+                    except Exception as e:
+                        google_error = type(e).__name__
+                        google_accessible = False
+
+                    g_lat = round((time.monotonic() - g_start) * 1000, 1)
+                    gfw_info = {
+                        "url": gfw_url,
+                        "accessible": google_accessible,
+                        "status": google_status,
+                        "error": google_error,
+                        "latency_ms": g_lat,
+                        "behind_gfw": not google_accessible,
+                    }
+
+                    if google_accessible:
+                        progress_counter["gfw_bypassed"] += 1
+                        logger.info(
+                            f"🚫 [排除-未在GFW内] {proxy_url:<30} 能直接访问 Google (HTTP {google_status})，排除出池"
+                        )
+                        return None
+                    else:
+                        progress_counter["gfw_confirmed"] += 1
+
         except Exception as e:
             logger.debug(f"ClientSession error for {proxy_url}: {e}")
             return None
 
-        passed_targets = [k for k, v in target_results.items() if v.get("success")]
-        passed_count = len(passed_targets)
+        progress_counter["alive"] += 1
+        gfw_log_msg = ""
+        if check_gfw and gfw_info:
+            gfw_reason = gfw_info.get("error") or f"HTTP {gfw_info.get('status')}"
+            gfw_log_msg = f" | GFW阻断Google: 成功({gfw_reason})"
 
-        # Evaluate success condition
-        if policy == "all":
-            is_success = (passed_count == len(TARGETS))
-        else:  # default 'any'
-            is_success = (passed_count > 0)
-
-        if is_success:
-            progress_counter["alive"] += 1
-            logger.info(
-                f"✅ [成功] {proxy_url:<30} 握手: {hs_time_ms}ms | 通过目标: {passed_targets}"
-            )
-            return {
-                "url": proxy_url,
-                "ip": candidate.ip,
-                "port": candidate.port,
-                "scheme": candidate.scheme,
-                "handshake_ms": hs_time_ms,
-                "passed_count": passed_count,
-                "passed_targets": passed_targets,
-                "targets": target_results,
-            }
-        else:
-            logger.debug(f"❌ [未通过] {proxy_url} 握手成功但所有HTTP测试均未通过")
-            return None
+        logger.info(
+            f"✅ [成功] {proxy_url:<30} 握手: {hs_time_ms}ms | 通过目标: {passed_targets}{gfw_log_msg}"
+        )
+        return {
+            "url": proxy_url,
+            "ip": candidate.ip,
+            "port": candidate.port,
+            "scheme": candidate.scheme,
+            "handshake_ms": hs_time_ms,
+            "passed_count": passed_count,
+            "passed_targets": passed_targets,
+            "targets": target_results,
+            "gfw_check": gfw_info,
+        }
 
 
 async def run_checker(
@@ -376,6 +424,7 @@ async def run_checker(
     concurrency: int,
     timeout: float,
     policy: str,
+    check_gfw: bool = True,
     details_file: Optional[str] = None,
 ):
     start_time = time.time()
@@ -386,6 +435,7 @@ async def run_checker(
     logger.info(f"并发数:   {concurrency}")
     logger.info(f"超时时间: {timeout} 秒")
     logger.info(f"判定策略: {policy} ('any'=通过任一目标, 'all'=通过全部4个目标)")
+    logger.info(f"GFW检测:  {check_gfw} (访问 https://www.google.com/generate_204 必须失败)")
     logger.info("=" * 60)
 
     # 1. 过滤中国节点
@@ -405,12 +455,15 @@ async def run_checker(
         "tested": 0,
         "handshake_passed": 0,
         "handshake_failed": 0,
+        "connected": 0,
+        "gfw_bypassed": 0,
+        "gfw_confirmed": 0,
         "alive": 0,
     }
 
     logger.info(f"启动异步检测，并发限制: {concurrency}...")
     tasks = [
-        check_node(c, semaphore, timeout, policy, progress_counter, total_candidates)
+        check_node(c, semaphore, timeout, policy, check_gfw, progress_counter, total_candidates)
         for c in candidates
     ]
     results = await asyncio.gather(*tasks)
@@ -439,8 +492,12 @@ async def run_checker(
                     "generated_at": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()),
                     "total_candidates": total_candidates,
                     "handshake_passed": progress_counter["handshake_passed"],
+                    "connected_count": progress_counter["connected"],
+                    "gfw_bypassed": progress_counter["gfw_bypassed"],
+                    "gfw_confirmed": progress_counter["gfw_confirmed"],
                     "alive_count": len(valid_nodes),
                     "policy": policy,
+                    "check_gfw": check_gfw,
                     "timeout": timeout,
                     "nodes": valid_nodes,
                 },
@@ -457,7 +514,11 @@ async def run_checker(
     logger.info(f"中国待测候选总数:  {total_candidates}")
     logger.info(f"TCP 握手成功:      {progress_counter['handshake_passed']}")
     logger.info(f"TCP 握手失败:      {progress_counter['handshake_failed']}")
-    logger.info(f"验证有效节点数:    {len(valid_nodes)}")
+    logger.info(f"联网测试通过数:    {progress_counter['connected']}")
+    if check_gfw:
+        logger.info(f"直连Google被排除:  {progress_counter['gfw_bypassed']} (未被GFW阻断)")
+        logger.info(f"GFW阻断确认通过:   {progress_counter['gfw_confirmed']}")
+    logger.info(f"最终有效节点数:    {len(valid_nodes)}")
     logger.info("=" * 60)
 
 
@@ -499,6 +560,12 @@ def main():
         help="Success policy: 'any' (pass at least 1 target) or 'all' (pass all 4 targets) (default: any or env SUCCESS_POLICY)",
     )
     parser.add_argument(
+        "--check-gfw",
+        action=argparse.BooleanOptionalAction,
+        default=os.getenv("CHECK_GFW", "true").lower() in ("true", "1", "yes"),
+        help="Verify node is behind GFW (access to https://www.google.com/generate_204 MUST fail) (default: true or env CHECK_GFW)",
+    )
+    parser.add_argument(
         "--details-file",
         default=os.getenv("DETAILS_FILE", "filter-data/allnode-details.json"),
         help="Output details json file path (default: filter-data/allnode-details.json or env DETAILS_FILE)",
@@ -514,6 +581,7 @@ def main():
                 concurrency=args.concurrency,
                 timeout=args.timeout,
                 policy=args.policy,
+                check_gfw=args.check_gfw,
                 details_file=args.details_file,
             )
         )

@@ -19,21 +19,26 @@
      - **微软 / Windows**：`http://www.msftconnecttest.com/connecttest.txt`（状态码 200，内容包含 `Microsoft Connect Test`）
      - **苹果 / Apple**：`http://captive.apple.com/hotspot-detect.html`（状态码 200，内容包含 `Success`）
 
-3. **标准 URL 格式输出**：
+3. **GFW 阻断确认检测（确保节点处于中国 GFW 之下）**：
+   - 在节点通过网络连通测试后，进一步测试通过代理请求 `https://www.google.com/generate_204`。
+   - **核心条件**：访问 Google **必须失败**（超时、连接重置或连接错误），确认其处于中国防火长城（GFW）严格阻断之下。
+   - 若代理能直接成功访问 Google，说明未受 GFW 限制（如海外回流或翻墙节点），将直接被自动剔除。
+
+4. **标准 URL 格式输出**：
    - 成功通过检测的节点以 URL 格式写入 `filter-data/allnode-url.txt`，每行一个节点，例如：
      ```text
      http://101.132.249.207:3129
      socks5://101.5.21.225:7894
      socks4://101.132.252.152:8008
      ```
-   - 附带输出结构化详情文件 `filter-data/allnode-details.json`，记录每个探针的延迟（ms）与响应状态。
+   - 附带输出结构化详情文件 `filter-data/allnode-details.json`，记录每个探针的延迟（ms）与 GFW 检验状态。
 
-4. **高并发与可配置性**：
+5. **高并发与可配置性**：
    - 超时时间默认 **5 秒**。
    - 并发数默认 **16 并发**。
-   - 支持通过**环境变量**或**命令行参数**自由指定并发数、超时时间与判定策略。
+   - 支持通过**环境变量**或**命令行参数**自由指定并发数、超时时间、判定策略及 GFW 检测开关。
 
-5. **GitHub Actions 自动化**：
+6. **GitHub Actions 自动化**：
    - 配置了定时调度工作流 `.github/workflows/check-proxies.yml`，每 6 小时自动获取最新节点、执行检测并推送结果至代码仓库。
 
 ---
@@ -79,6 +84,7 @@ python main.py --concurrency 32 --timeout 5 --policy any
 | `--concurrency`, `-c` | `CONCURRENCY` | `16` | 检测并发数 |
 | `--timeout`, `-t` | `TIMEOUT` | `5` | 握手与请求超时时间（秒） |
 | `--policy`, `-p` | `SUCCESS_POLICY` | `any` | 成功判定策略：`any`（任一探针成功）或 `all`（全部4个探针成功） |
+| `--check-gfw` / `--no-check-gfw` | `CHECK_GFW` | `true` | 是否确认处于 GFW 之下（请求 Google 必须失败） |
 | `--input-dir`, `-i` | `INPUT_DIR` | `input-raw-data` | 原始节点数据所在目录 |
 | `--output-file`, `-o` | `OUTPUT_FILE` | `filter-data/allnode-url.txt` | 输出节点 URL 文本路径 |
 | `--details-file` | `DETAILS_FILE` | `filter-data/allnode-details.json` | 输出详细检测结果 JSON 路径 |

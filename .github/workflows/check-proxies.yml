@@ -22,6 +22,11 @@ on:
         options:
           - any
           - all
+      check_gfw:
+        description: '必须处于 GFW 之下 (访问 Google 必须失败)'
+        required: false
+        default: 'true'
+        type: boolean
 
 permissions:
   contents: write
@@ -53,11 +58,12 @@ jobs:
             bash 0-get-raw-node1.sh
           fi
 
-      - name: 运行中国代理连通性检测
+      - name: 运行中国代理连通性与GFW检测
         env:
           CONCURRENCY: ${{ github.event.inputs.concurrency || '32' }}
           TIMEOUT: ${{ github.event.inputs.timeout || '5' }}
           SUCCESS_POLICY: ${{ github.event.inputs.policy || 'any' }}
+          CHECK_GFW: ${{ github.event.inputs.check_gfw || 'true' }}
         run: |
           python main.py
 
