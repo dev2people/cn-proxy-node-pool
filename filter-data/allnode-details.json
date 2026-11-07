@@ -1,165 +1,21 @@
 {
-  "generated_at": "2026-11-07 05:43:48 UTC",
-  "total_candidates": 448,
-  "handshake_passed": 177,
-  "connected_count": 52,
-  "gfw_bypassed": 0,
-  "gfw_confirmed": 52,
-  "alive_count": 52,
+  "generated_at": "2026-11-07 12:51:30 UTC",
+  "total_candidates": 511,
+  "handshake_passed": 219,
+  "connected_count": 87,
+  "gfw_bypassed": 1,
+  "gfw_confirmed": 86,
+  "alive_count": 86,
   "policy": "any",
   "check_gfw": true,
   "timeout": 5.0,
   "nodes": [
     {
-      "url": "http://111.192.52.67:8888",
-      "ip": "111.192.52.67",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 189.4,
-      "passed_count": 4,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft",
-        "apple"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 996.1,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 1000.6,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 1473.1,
-          "error": null
-        },
-        "apple": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 1001.4,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.3,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://111.192.53.176:8888",
-      "ip": "111.192.53.176",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 193.1,
-      "passed_count": 4,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft",
-        "apple"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 1801.9,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 1802.7,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 2119.1,
-          "error": null
-        },
-        "apple": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 1803.4,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.2,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks5://113.249.111.67:1080",
-      "ip": "113.249.111.67",
-      "port": 1080,
-      "scheme": "socks5",
-      "handshake_ms": 209.4,
-      "passed_count": 4,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft",
-        "apple"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 2080.9,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 988.4,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4907.1,
-          "error": null
-        },
-        "apple": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 1111.6,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5000.8,
-        "behind_gfw": true
-      }
-    },
-    {
       "url": "http://114.249.225.156:8888",
       "ip": "114.249.225.156",
       "port": 8888,
       "scheme": "http",
-      "handshake_ms": 189.6,
+      "handshake_ms": 247.5,
       "passed_count": 4,
       "passed_targets": [
         "xiaomi",
@@ -171,73 +27,25 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 600.8,
+          "latency_ms": 776.2,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 595.3,
+          "latency_ms": 799.0,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 913.1,
+          "latency_ms": 1132.8,
           "error": null
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 594.2,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.0,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks5://121.46.226.221:10808",
-      "ip": "121.46.226.221",
-      "port": 10808,
-      "scheme": "socks5",
-      "handshake_ms": 1241.7,
-      "passed_count": 4,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft",
-        "apple"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 3616.8,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 4040.2,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 1673.8,
-          "error": null
-        },
-        "apple": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 3001.2,
+          "latency_ms": 769.3,
           "error": null
         }
       },
@@ -251,11 +59,11 @@
       }
     },
     {
-      "url": "http://123.112.147.39:8888",
-      "ip": "123.112.147.39",
+      "url": "http://114.250.195.77:8888",
+      "ip": "114.250.195.77",
       "port": 8888,
       "scheme": "http",
-      "handshake_ms": 185.9,
+      "handshake_ms": 268.2,
       "passed_count": 4,
       "passed_targets": [
         "xiaomi",
@@ -267,25 +75,25 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 1579.1,
+          "latency_ms": 2807.5,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 1580.6,
+          "latency_ms": 757.3,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 2083.5,
+          "latency_ms": 1139.1,
           "error": null
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 1578.7,
+          "latency_ms": 1737.9,
           "error": null
         }
       },
@@ -299,11 +107,11 @@
       }
     },
     {
-      "url": "http://123.121.113.161:8888",
-      "ip": "123.121.113.161",
-      "port": 8888,
+      "url": "http://118.145.144.62:8080",
+      "ip": "118.145.144.62",
+      "port": 8080,
       "scheme": "http",
-      "handshake_ms": 204.2,
+      "handshake_ms": 1244.8,
       "passed_count": 4,
       "passed_targets": [
         "xiaomi",
@@ -315,25 +123,25 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 674.3,
+          "latency_ms": 2377.8,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 946.7,
+          "latency_ms": 2186.2,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 1003.7,
+          "latency_ms": 3396.0,
           "error": null
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 676.1,
+          "latency_ms": 2193.7,
           "error": null
         }
       },
@@ -341,17 +149,17 @@
         "url": "https://www.google.com/generate_204",
         "accessible": false,
         "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.3,
+        "error": "ProxyError",
+        "latency_ms": 1798.2,
         "behind_gfw": true
       }
     },
     {
-      "url": "http://123.121.121.123:8888",
-      "ip": "123.121.121.123",
+      "url": "http://123.119.179.101:8888",
+      "ip": "123.119.179.101",
       "port": 8888,
       "scheme": "http",
-      "handshake_ms": 184.1,
+      "handshake_ms": 238.0,
       "passed_count": 4,
       "passed_targets": [
         "xiaomi",
@@ -363,25 +171,25 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 622.2,
+          "latency_ms": 695.9,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 611.0,
+          "latency_ms": 1035.4,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 1097.8,
+          "latency_ms": 1115.3,
           "error": null
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 649.3,
+          "latency_ms": 2835.4,
           "error": null
         }
       },
@@ -390,55 +198,7 @@
         "accessible": false,
         "status": null,
         "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.2,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://123.121.123.216:8888",
-      "ip": "123.121.123.216",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 186.7,
-      "passed_count": 4,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft",
-        "apple"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 659.2,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 697.9,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 988.5,
-          "error": null
-        },
-        "apple": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 665.4,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.4,
+        "latency_ms": 5000.9,
         "behind_gfw": true
       }
     },
@@ -447,7 +207,7 @@
       "ip": "123.121.142.252",
       "port": 8888,
       "scheme": "http",
-      "handshake_ms": 191.4,
+      "handshake_ms": 234.8,
       "passed_count": 4,
       "passed_targets": [
         "xiaomi",
@@ -459,25 +219,25 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 561.3,
+          "latency_ms": 720.4,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 1746.0,
+          "latency_ms": 1750.5,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 932.5,
+          "latency_ms": 1137.0,
           "error": null
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 3883.7,
+          "latency_ms": 1025.0,
           "error": null
         }
       },
@@ -495,7 +255,7 @@
       "ip": "134.175.238.113",
       "port": 1080,
       "scheme": "socks5",
-      "handshake_ms": 1218.2,
+      "handshake_ms": 219.6,
       "passed_count": 4,
       "passed_targets": [
         "xiaomi",
@@ -507,25 +267,25 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 2547.0,
+          "latency_ms": 2797.6,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 2939.7,
+          "latency_ms": 2969.1,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 4880.8,
+          "latency_ms": 2711.2,
           "error": null
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 1831.6,
+          "latency_ms": 2969.0,
           "error": null
         }
       },
@@ -539,11 +299,11 @@
       }
     },
     {
-      "url": "socks5://221.225.48.68:8989",
-      "ip": "221.225.48.68",
-      "port": 8989,
-      "scheme": "socks5",
-      "handshake_ms": 304.3,
+      "url": "socks4://218.26.101.226:53813",
+      "ip": "218.26.101.226",
+      "port": 53813,
+      "scheme": "socks4",
+      "handshake_ms": 3313.8,
       "passed_count": 4,
       "passed_targets": [
         "xiaomi",
@@ -555,25 +315,25 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 1557.3,
+          "latency_ms": 1879.9,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 3118.2,
+          "latency_ms": 1380.4,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 3831.2,
+          "latency_ms": 1211.8,
           "error": null
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 3047.0,
+          "latency_ms": 4255.5,
           "error": null
         }
       },
@@ -582,64 +342,16 @@
         "accessible": false,
         "status": null,
         "error": "ConnectionTimeoutError",
-        "latency_ms": 5002.1,
+        "latency_ms": 5000.8,
         "behind_gfw": true
       }
     },
     {
-      "url": "socks5://222.211.216.201:7890",
-      "ip": "222.211.216.201",
-      "port": 7890,
-      "scheme": "socks5",
-      "handshake_ms": 1276.2,
-      "passed_count": 4,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft",
-        "apple"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 2845.5,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 852.5,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 1907.5,
-          "error": null
-        },
-        "apple": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 1091.7,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 2058.3,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks5://39.106.165.196:1080",
-      "ip": "39.106.165.196",
+      "url": "http://36.213.79.159:1080",
+      "ip": "36.213.79.159",
       "port": 1080,
-      "scheme": "socks5",
-      "handshake_ms": 187.9,
+      "scheme": "http",
+      "handshake_ms": 184.2,
       "passed_count": 4,
       "passed_targets": [
         "xiaomi",
@@ -651,25 +363,120 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 770.9,
+          "latency_ms": 767.7,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 862.8,
+          "latency_ms": 3409.1,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 3015.8,
+          "latency_ms": 1139.4,
           "error": null
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 825.2,
+          "latency_ms": 1750.0,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "TimeoutError",
+        "latency_ms": 5530.2,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://58.18.39.58:10800",
+      "ip": "58.18.39.58",
+      "port": 10800,
+      "scheme": "socks4",
+      "handshake_ms": 4311.2,
+      "passed_count": 4,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft",
+        "apple"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 1002.8,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 4273.8,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3531.7,
+          "error": null
+        },
+        "apple": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4267.9,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ConnectionTimeoutError",
+        "latency_ms": 5001.0,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://101.132.248.7:20",
+      "ip": "101.132.248.7",
+      "port": 20,
+      "scheme": "http",
+      "handshake_ms": 227.1,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4470.1,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4493.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4472.4,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4486.3,
           "error": null
         }
       },
@@ -678,55 +485,7 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 383.1,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks5://49.87.152.191:8989",
-      "ip": "49.87.152.191",
-      "port": 8989,
-      "scheme": "socks5",
-      "handshake_ms": 549.7,
-      "passed_count": 4,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft",
-        "apple"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 1846.1,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 1817.0,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 3778.4,
-          "error": null
-        },
-        "apple": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 1911.4,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ProxyError",
-        "latency_ms": 2265.8,
+        "latency_ms": 4656.0,
         "behind_gfw": true
       }
     },
@@ -735,7 +494,7 @@
       "ip": "101.132.248.7",
       "port": 1337,
       "scheme": "http",
-      "handshake_ms": 162.2,
+      "handshake_ms": 208.8,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -746,25 +505,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 4339.7,
+          "latency_ms": 4510.1,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 4330.8,
+          "latency_ms": 4504.6,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 4381.5,
+          "latency_ms": 4494.4,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 4368.2,
+          "latency_ms": 4505.0,
           "error": null
         }
       },
@@ -773,16 +532,392 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4540.5,
+        "latency_ms": 4661.3,
         "behind_gfw": true
       }
     },
     {
-      "url": "socks4://101.132.248.7:1337",
+      "url": "http://101.132.248.7:8008",
       "ip": "101.132.248.7",
+      "port": 8008,
+      "scheme": "http",
+      "handshake_ms": 208.8,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4500.4,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4503.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4501.1,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4502.2,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4715.3,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://101.132.248.7:8008",
+      "ip": "101.132.248.7",
+      "port": 8008,
+      "scheme": "socks4",
+      "handshake_ms": 227.6,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3465.2,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3474.9,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3468.2,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3472.2,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4675.1,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://101.132.248.7:8081",
+      "ip": "101.132.248.7",
+      "port": 8081,
+      "scheme": "http",
+      "handshake_ms": 211.7,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4495.8,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4489.8,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4503.1,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4483.8,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4683.0,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://101.132.248.7:8081",
+      "ip": "101.132.248.7",
+      "port": 8081,
+      "scheme": "socks4",
+      "handshake_ms": 213.7,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3489.0,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3490.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3481.2,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4503.3,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4656.9,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://101.132.248.7:8888",
+      "ip": "101.132.248.7",
+      "port": 8888,
+      "scheme": "http",
+      "handshake_ms": 212.7,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4474.9,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4498.4,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4479.7,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4500.3,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4668.5,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://101.132.248.7:9000",
+      "ip": "101.132.248.7",
+      "port": 9000,
+      "scheme": "http",
+      "handshake_ms": 217.4,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4492.4,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4491.9,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4498.1,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4492.9,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4689.7,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://101.132.248.7:9000",
+      "ip": "101.132.248.7",
+      "port": 9000,
+      "scheme": "socks4",
+      "handshake_ms": 206.3,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3492.4,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3497.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3493.2,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3498.6,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4709.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://101.132.249.207:1337",
+      "ip": "101.132.249.207",
+      "port": 1337,
+      "scheme": "http",
+      "handshake_ms": 209.5,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4434.0,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4439.9,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4414.7,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4457.4,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4687.5,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://101.132.249.207:1337",
+      "ip": "101.132.249.207",
       "port": 1337,
       "scheme": "socks4",
-      "handshake_ms": 188.1,
+      "handshake_ms": 218.8,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -793,25 +928,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 3330.4,
+          "latency_ms": 3434.3,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 3333.8,
+          "latency_ms": 3436.7,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 3337.7,
+          "latency_ms": 3462.3,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 3373.5,
+          "latency_ms": 3424.9,
           "error": null
         }
       },
@@ -820,148 +955,7 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4540.4,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://101.132.248.7:3128",
-      "ip": "101.132.248.7",
-      "port": 3128,
-      "scheme": "http",
-      "handshake_ms": 193.4,
-      "passed_count": 3,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4377.8,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4336.2,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4378.0,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": 200,
-          "latency_ms": 4331.3,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 4538.2,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks4://101.132.248.7:3128",
-      "ip": "101.132.248.7",
-      "port": 3128,
-      "scheme": "socks4",
-      "handshake_ms": 163.3,
-      "passed_count": 3,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 3364.0,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 3333.4,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 3372.6,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": 200,
-          "latency_ms": 3337.5,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 4534.5,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://101.132.248.7:9080",
-      "ip": "101.132.248.7",
-      "port": 9080,
-      "scheme": "http",
-      "handshake_ms": 166.5,
-      "passed_count": 3,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4330.7,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4378.9,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4328.4,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": 200,
-          "latency_ms": 4378.6,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 4533.9,
+        "latency_ms": 4693.3,
         "behind_gfw": true
       }
     },
@@ -970,7 +964,7 @@
       "ip": "101.132.249.207",
       "port": 3128,
       "scheme": "http",
-      "handshake_ms": 195.0,
+      "handshake_ms": 211.4,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -981,25 +975,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 4334.2,
+          "latency_ms": 4427.2,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 4370.7,
+          "latency_ms": 4429.9,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 4339.1,
+          "latency_ms": 4455.1,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 4365.6,
+          "latency_ms": 4454.4,
           "error": null
         }
       },
@@ -1008,7 +1002,54 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4541.3,
+        "latency_ms": 4658.0,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://101.132.249.207:8008",
+      "ip": "101.132.249.207",
+      "port": 8008,
+      "scheme": "http",
+      "handshake_ms": 217.3,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4446.1,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4442.8,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4426.7,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4426.9,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4693.6,
         "behind_gfw": true
       }
     },
@@ -1017,7 +1058,7 @@
       "ip": "101.132.249.207",
       "port": 8081,
       "scheme": "http",
-      "handshake_ms": 174.3,
+      "handshake_ms": 207.5,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1028,25 +1069,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 4337.1,
+          "latency_ms": 4443.9,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 4332.0,
+          "latency_ms": 4437.7,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 4332.5,
+          "latency_ms": 4443.3,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 4331.5,
+          "latency_ms": 4442.8,
           "error": null
         }
       },
@@ -1055,7 +1096,54 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4603.5,
+        "latency_ms": 4677.9,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://101.132.249.207:8082",
+      "ip": "101.132.249.207",
+      "port": 8082,
+      "scheme": "socks4",
+      "handshake_ms": 214.9,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3441.1,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3451.1,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3436.2,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3429.6,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4657.4,
         "behind_gfw": true
       }
     },
@@ -1064,7 +1152,7 @@
       "ip": "101.132.249.207",
       "port": 8090,
       "scheme": "http",
-      "handshake_ms": 172.1,
+      "handshake_ms": 204.9,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1075,25 +1163,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 4380.1,
+          "latency_ms": 4408.5,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 4340.6,
+          "latency_ms": 4441.2,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 4364.3,
+          "latency_ms": 4455.5,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 4335.2,
+          "latency_ms": 4422.9,
           "error": null
         }
       },
@@ -1102,7 +1190,7 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4525.1,
+        "latency_ms": 4971.0,
         "behind_gfw": true
       }
     },
@@ -1111,7 +1199,7 @@
       "ip": "101.132.249.207",
       "port": 8090,
       "scheme": "socks4",
-      "handshake_ms": 174.9,
+      "handshake_ms": 206.6,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1122,25 +1210,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 3334.6,
+          "latency_ms": 3433.6,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 3335.9,
+          "latency_ms": 3433.4,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 3374.6,
+          "latency_ms": 3440.3,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 3336.5,
+          "latency_ms": 3414.1,
           "error": null
         }
       },
@@ -1149,7 +1237,7 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4598.0,
+        "latency_ms": 4692.7,
         "behind_gfw": true
       }
     },
@@ -1158,7 +1246,7 @@
       "ip": "101.132.249.207",
       "port": 8181,
       "scheme": "socks4",
-      "handshake_ms": 170.1,
+      "handshake_ms": 212.2,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1169,25 +1257,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 3364.3,
+          "latency_ms": 3466.9,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 3335.1,
+          "latency_ms": 3466.8,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 3340.4,
+          "latency_ms": 3459.2,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 3332.6,
+          "latency_ms": 3458.3,
           "error": null
         }
       },
@@ -1196,157 +1284,16 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4542.2,
+        "latency_ms": 4654.6,
         "behind_gfw": true
       }
     },
     {
-      "url": "http://101.132.249.207:8888",
+      "url": "socks4://101.132.249.207:8888",
       "ip": "101.132.249.207",
       "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 187.1,
-      "passed_count": 3,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4329.9,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4374.3,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4342.1,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": 200,
-          "latency_ms": 4340.3,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 4529.8,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://101.132.252.152:10",
-      "ip": "101.132.252.152",
-      "port": 10,
-      "scheme": "http",
-      "handshake_ms": 197.5,
-      "passed_count": 3,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4370.5,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4329.3,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4375.6,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": 200,
-          "latency_ms": 4328.7,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 4543.1,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://101.132.252.152:1081",
-      "ip": "101.132.252.152",
-      "port": 1081,
-      "scheme": "http",
-      "handshake_ms": 166.9,
-      "passed_count": 3,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4336.3,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4373.8,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4329.4,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": 200,
-          "latency_ms": 4367.8,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 4524.1,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks4://101.132.252.152:1337",
-      "ip": "101.132.252.152",
-      "port": 1337,
       "scheme": "socks4",
-      "handshake_ms": 181.1,
+      "handshake_ms": 213.2,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1357,25 +1304,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 3334.6,
+          "latency_ms": 3441.9,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 3333.5,
+          "latency_ms": 3458.5,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 3330.6,
+          "latency_ms": 3458.4,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 3333.2,
+          "latency_ms": 3459.8,
           "error": null
         }
       },
@@ -1384,16 +1331,16 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4545.8,
+        "latency_ms": 4675.8,
         "behind_gfw": true
       }
     },
     {
-      "url": "socks4://101.132.252.152:3128",
-      "ip": "101.132.252.152",
-      "port": 3128,
-      "scheme": "socks4",
-      "handshake_ms": 171.2,
+      "url": "http://101.132.249.207:9080",
+      "ip": "101.132.249.207",
+      "port": 9080,
+      "scheme": "http",
+      "handshake_ms": 218.5,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1404,25 +1351,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 3372.4,
+          "latency_ms": 4441.5,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 3331.9,
+          "latency_ms": 4447.2,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 3334.5,
+          "latency_ms": 4449.3,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 3331.1,
+          "latency_ms": 4468.2,
           "error": null
         }
       },
@@ -1431,7 +1378,242 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4558.6,
+        "latency_ms": 4681.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://101.132.252.152:80",
+      "ip": "101.132.252.152",
+      "port": 80,
+      "scheme": "http",
+      "handshake_ms": 214.1,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4426.9,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4420.4,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4428.0,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4456.9,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4662.1,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://101.132.252.152:1080",
+      "ip": "101.132.252.152",
+      "port": 1080,
+      "scheme": "http",
+      "handshake_ms": 218.4,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4432.7,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4411.6,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4421.0,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4416.2,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4657.4,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://101.132.252.152:1080",
+      "ip": "101.132.252.152",
+      "port": 1080,
+      "scheme": "socks4",
+      "handshake_ms": 230.1,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3424.6,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3423.3,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3419.4,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3411.7,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4665.1,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://101.132.252.152:8008",
+      "ip": "101.132.252.152",
+      "port": 8008,
+      "scheme": "socks4",
+      "handshake_ms": 225.5,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3417.2,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3415.9,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3426.1,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3434.0,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4669.3,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://101.132.252.152:8123",
+      "ip": "101.132.252.152",
+      "port": 8123,
+      "scheme": "http",
+      "handshake_ms": 208.9,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4418.8,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4421.0,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4413.2,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4426.7,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4675.0,
         "behind_gfw": true
       }
     },
@@ -1440,7 +1622,7 @@
       "ip": "101.132.252.152",
       "port": 8333,
       "scheme": "socks4",
-      "handshake_ms": 163.3,
+      "handshake_ms": 216.7,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1451,25 +1633,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 3325.5,
+          "latency_ms": 3435.6,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 3362.7,
+          "latency_ms": 3425.4,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 3331.8,
+          "latency_ms": 3425.8,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 3337.0,
+          "latency_ms": 3425.4,
           "error": null
         }
       },
@@ -1478,7 +1660,7 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4550.9,
+        "latency_ms": 4666.1,
         "behind_gfw": true
       }
     },
@@ -1487,7 +1669,7 @@
       "ip": "101.132.252.152",
       "port": 8888,
       "scheme": "http",
-      "handshake_ms": 193.9,
+      "handshake_ms": 219.5,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1498,25 +1680,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 4371.3,
+          "latency_ms": 4425.9,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 4335.6,
+          "latency_ms": 4429.0,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 4370.3,
+          "latency_ms": 4425.5,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 4325.4,
+          "latency_ms": 4420.9,
           "error": null
         }
       },
@@ -1525,16 +1707,16 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4573.7,
+        "latency_ms": 4662.5,
         "behind_gfw": true
       }
     },
     {
-      "url": "http://101.132.252.152:9080",
-      "ip": "101.132.252.152",
-      "port": 9080,
+      "url": "http://106.14.104.220:28",
+      "ip": "106.14.104.220",
+      "port": 28,
       "scheme": "http",
-      "handshake_ms": 170.4,
+      "handshake_ms": 206.7,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1545,25 +1727,25 @@
         "xiaomi": {
           "success": true,
           "status": 200,
-          "latency_ms": 4336.8,
+          "latency_ms": 4439.8,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 200,
-          "latency_ms": 4330.5,
+          "latency_ms": 4437.0,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 4374.9,
+          "latency_ms": 4423.7,
           "error": null
         },
         "apple": {
           "success": false,
           "status": 200,
-          "latency_ms": 4326.6,
+          "latency_ms": 4457.8,
           "error": null
         }
       },
@@ -1572,45 +1754,1408 @@
         "accessible": false,
         "status": null,
         "error": "ClientOSError",
-        "latency_ms": 4585.0,
+        "latency_ms": 4696.0,
         "behind_gfw": true
       }
     },
     {
-      "url": "http://111.192.61.51:8888",
-      "ip": "111.192.61.51",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 193.0,
+      "url": "socks4://106.14.104.220:9098",
+      "ip": "106.14.104.220",
+      "port": 9098,
+      "scheme": "socks4",
+      "handshake_ms": 212.2,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
         "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3437.7,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3429.6,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3425.1,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3426.8,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 3456.4,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.14.91.83:100",
+      "ip": "106.14.91.83",
+      "port": 100,
+      "scheme": "http",
+      "handshake_ms": 210.0,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4437.2,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4417.6,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4430.2,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4445.9,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4672.9,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.14.91.83:443",
+      "ip": "106.14.91.83",
+      "port": 443,
+      "scheme": "http",
+      "handshake_ms": 212.2,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4459.6,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4442.6,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4414.5,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4423.7,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4672.2,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.14.91.83:4000",
+      "ip": "106.14.91.83",
+      "port": 4000,
+      "scheme": "http",
+      "handshake_ms": 217.4,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4426.8,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4437.0,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4433.7,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4426.2,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4664.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.14.91.83:7890",
+      "ip": "106.14.91.83",
+      "port": 7890,
+      "scheme": "http",
+      "handshake_ms": 232.7,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4426.1,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4430.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4442.0,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4426.7,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4667.9,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.14.91.83:8083",
+      "ip": "106.14.91.83",
+      "port": 8083,
+      "scheme": "http",
+      "handshake_ms": 205.4,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4430.3,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4459.9,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4430.5,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4440.4,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4669.9,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.14.91.83:8087",
+      "ip": "106.14.91.83",
+      "port": 8087,
+      "scheme": "http",
+      "handshake_ms": 220.0,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4425.9,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4452.9,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4446.3,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4438.6,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4662.6,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://106.14.91.83:8087",
+      "ip": "106.14.91.83",
+      "port": 8087,
+      "scheme": "socks4",
+      "handshake_ms": 211.3,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3447.2,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3447.9,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3456.8,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3476.3,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4679.9,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://106.14.91.83:8181",
+      "ip": "106.14.91.83",
+      "port": 8181,
+      "scheme": "socks4",
+      "handshake_ms": 209.5,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3440.1,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3453.3,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3446.8,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3438.0,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4656.7,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://106.14.91.83:8443",
+      "ip": "106.14.91.83",
+      "port": 8443,
+      "scheme": "socks4",
+      "handshake_ms": 215.2,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3429.4,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3457.0,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3450.9,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3441.6,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4666.2,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.14.91.83:20002",
+      "ip": "106.14.91.83",
+      "port": 20002,
+      "scheme": "http",
+      "handshake_ms": 213.0,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4426.5,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4433.1,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4421.7,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4417.2,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4702.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.137.41:50",
+      "ip": "106.15.137.41",
+      "port": 50,
+      "scheme": "http",
+      "handshake_ms": 218.9,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4431.0,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4410.3,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4427.0,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4428.9,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4931.0,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.137.41:80",
+      "ip": "106.15.137.41",
+      "port": 80,
+      "scheme": "http",
+      "handshake_ms": 206.1,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4425.5,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4417.5,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4431.5,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4442.8,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4937.6,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.137.41:1337",
+      "ip": "106.15.137.41",
+      "port": 1337,
+      "scheme": "http",
+      "handshake_ms": 205.5,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4436.5,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4432.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4437.9,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4424.7,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4923.4,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.137.41:3129",
+      "ip": "106.15.137.41",
+      "port": 3129,
+      "scheme": "http",
+      "handshake_ms": 225.3,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4415.7,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4444.5,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4411.7,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4428.3,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4936.6,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://106.15.137.41:3129",
+      "ip": "106.15.137.41",
+      "port": 3129,
+      "scheme": "socks4",
+      "handshake_ms": 220.1,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3443.9,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3405.8,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3447.7,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3422.3,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4975.1,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.137.41:8080",
+      "ip": "106.15.137.41",
+      "port": 8080,
+      "scheme": "http",
+      "handshake_ms": 213.6,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4406.4,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4425.1,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4413.4,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4438.2,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4954.4,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.137.41:8085",
+      "ip": "106.15.137.41",
+      "port": 8085,
+      "scheme": "http",
+      "handshake_ms": 201.3,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4422.0,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4427.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4419.7,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4441.4,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4911.7,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://106.15.137.41:8085",
+      "ip": "106.15.137.41",
+      "port": 8085,
+      "scheme": "socks4",
+      "handshake_ms": 211.7,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3410.4,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3412.0,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3434.2,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3439.0,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4958.2,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.137.41:8123",
+      "ip": "106.15.137.41",
+      "port": 8123,
+      "scheme": "http",
+      "handshake_ms": 214.1,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4433.2,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4432.9,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4424.3,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4432.3,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4932.7,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.58.163:81",
+      "ip": "106.15.58.163",
+      "port": 81,
+      "scheme": "http",
+      "handshake_ms": 234.1,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4414.1,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4428.6,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4433.1,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4429.7,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4906.0,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.58.163:1337",
+      "ip": "106.15.58.163",
+      "port": 1337,
+      "scheme": "http",
+      "handshake_ms": 218.1,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4443.4,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4423.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4448.0,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4438.5,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4956.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.58.163:3129",
+      "ip": "106.15.58.163",
+      "port": 3129,
+      "scheme": "http",
+      "handshake_ms": 201.5,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4440.1,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4442.5,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4443.1,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4428.1,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4912.2,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.58.163:8000",
+      "ip": "106.15.58.163",
+      "port": 8000,
+      "scheme": "http",
+      "handshake_ms": 213.4,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4431.1,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4422.3,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4430.6,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4426.5,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4922.9,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.58.163:8081",
+      "ip": "106.15.58.163",
+      "port": 8081,
+      "scheme": "http",
+      "handshake_ms": 226.6,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4432.0,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4430.3,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4426.0,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4420.8,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "TimeoutError",
+        "latency_ms": 5866.3,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.58.163:8082",
+      "ip": "106.15.58.163",
+      "port": 8082,
+      "scheme": "http",
+      "handshake_ms": 204.8,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4432.4,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4440.4,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4432.1,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4417.1,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4948.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.15.58.163:8097",
+      "ip": "106.15.58.163",
+      "port": 8097,
+      "scheme": "http",
+      "handshake_ms": 220.2,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4448.3,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4427.3,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4451.6,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4455.8,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4921.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://106.15.58.163:8097",
+      "ip": "106.15.58.163",
+      "port": 8097,
+      "scheme": "socks4",
+      "handshake_ms": 210.1,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3420.1,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3443.2,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3430.7,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3428.2,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4913.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://106.15.58.163:8118",
+      "ip": "106.15.58.163",
+      "port": 8118,
+      "scheme": "socks4",
+      "handshake_ms": 211.2,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3415.0,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3448.2,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3447.4,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 3444.3,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4939.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks5://113.249.111.67:1080",
+      "ip": "113.249.111.67",
+      "port": 1080,
+      "scheme": "socks5",
+      "handshake_ms": 254.5,
+      "passed_count": 3,
+      "passed_targets": [
+        "huawei",
+        "microsoft",
         "apple"
       ],
       "targets": {
         "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 598.3,
-          "error": null
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "ServerDisconnectedError"
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 2644.9,
+          "latency_ms": 955.3,
           "error": null
         },
         "microsoft": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
+          "success": true,
+          "status": 200,
+          "latency_ms": 2792.2,
+          "error": null
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 610.3,
+          "latency_ms": 979.6,
           "error": null
         }
       },
@@ -1619,16 +3164,63 @@
         "accessible": false,
         "status": null,
         "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.5,
+        "latency_ms": 5000.9,
         "behind_gfw": true
       }
     },
     {
-      "url": "http://222.129.142.219:9000",
-      "ip": "222.129.142.219",
-      "port": 9000,
+      "url": "socks5://121.46.226.221:10808",
+      "ip": "121.46.226.221",
+      "port": 10808,
+      "scheme": "socks5",
+      "handshake_ms": 1232.9,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "microsoft",
+        "apple"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 3266.2,
+          "error": null
+        },
+        "huawei": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 2111.5,
+          "error": null
+        },
+        "apple": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4491.0,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ConnectionTimeoutError",
+        "latency_ms": 5000.3,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://221.221.150.139:8888",
+      "ip": "221.221.150.139",
+      "port": 8888,
       "scheme": "http",
-      "handshake_ms": 185.3,
+      "handshake_ms": 2329.4,
       "passed_count": 3,
       "passed_targets": [
         "xiaomi",
@@ -1639,19 +3231,19 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 4713.9,
+          "latency_ms": 743.8,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 1153.4,
+          "latency_ms": 736.1,
           "error": null
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 3902.4,
+          "latency_ms": 3212.4,
           "error": null
         },
         "apple": {
@@ -1659,6 +3251,471 @@
           "status": null,
           "latency_ms": null,
           "error": "Timeout"
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ConnectionTimeoutError",
+        "latency_ms": 5002.4,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://222.128.171.2:8888",
+      "ip": "222.128.171.2",
+      "port": 8888,
+      "scheme": "http",
+      "handshake_ms": 223.5,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 716.8,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 777.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 1194.4,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ConnectionTimeoutError",
+        "latency_ms": 5001.2,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks5://222.211.216.201:7890",
+      "ip": "222.211.216.201",
+      "port": 7890,
+      "scheme": "socks5",
+      "handshake_ms": 247.8,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 1044.6,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 998.6,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4444.0,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "TimeoutError",
+        "latency_ms": 6000.0,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://39.104.16.201:8008",
+      "ip": "39.104.16.201",
+      "port": 8008,
+      "scheme": "http",
+      "handshake_ms": 242.9,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4478.8,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4481.0,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4476.6,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4500.5,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "TimeoutError",
+        "latency_ms": 5985.3,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks5://39.106.165.196:1080",
+      "ip": "39.106.165.196",
+      "port": 1080,
+      "scheme": "socks5",
+      "handshake_ms": 231.6,
+      "passed_count": 3,
+      "passed_targets": [
+        "huawei",
+        "microsoft",
+        "apple"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "huawei": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 5621.7,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4409.0,
+          "error": null
+        },
+        "apple": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3330.0,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 466.5,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://8.130.74.114:8443",
+      "ip": "8.130.74.114",
+      "port": 8443,
+      "scheme": "http",
+      "handshake_ms": 236.7,
+      "passed_count": 3,
+      "passed_targets": [
+        "xiaomi",
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4467.4,
+          "error": null
+        },
+        "huawei": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4468.8,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4464.8,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4466.9,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 4982.3,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://106.14.104.220:8000",
+      "ip": "106.14.104.220",
+      "port": 8000,
+      "scheme": "http",
+      "handshake_ms": 215.1,
+      "passed_count": 2,
+      "passed_targets": [
+        "xiaomi",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4426.0,
+          "error": null
+        },
+        "huawei": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 4427.5,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": 200,
+          "latency_ms": 4452.3,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ClientOSError",
+        "latency_ms": 409.1,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://111.199.234.107:9000",
+      "ip": "111.199.234.107",
+      "port": 9000,
+      "scheme": "http",
+      "handshake_ms": 3303.5,
+      "passed_count": 2,
+      "passed_targets": [
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "huawei": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 726.1,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 5106.1,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ConnectionTimeoutError",
+        "latency_ms": 5000.4,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://123.121.113.161:8888",
+      "ip": "123.121.113.161",
+      "port": 8888,
+      "scheme": "http",
+      "handshake_ms": 234.8,
+      "passed_count": 2,
+      "passed_targets": [
+        "xiaomi",
+        "apple"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 5284.9,
+          "error": null
+        },
+        "huawei": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "ProxyError"
+        },
+        "microsoft": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "ProxyError"
+        },
+        "apple": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 5368.2,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ConnectionTimeoutError",
+        "latency_ms": 5000.8,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "http://221.221.158.205:8888",
+      "ip": "221.221.158.205",
+      "port": 8888,
+      "scheme": "http",
+      "handshake_ms": 232.7,
+      "passed_count": 2,
+      "passed_targets": [
+        "huawei",
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "huawei": {
+          "success": true,
+          "status": 204,
+          "latency_ms": 810.9,
+          "error": null
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 1189.2,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ConnectionTimeoutError",
+        "latency_ms": 5000.7,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks5://36.213.79.159:1080",
+      "ip": "36.213.79.159",
+      "port": 1080,
+      "scheme": "socks5",
+      "handshake_ms": 182.1,
+      "passed_count": 2,
+      "passed_targets": [
+        "microsoft",
+        "apple"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "huawei": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3901.8,
+          "error": null
+        },
+        "apple": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 1789.1,
+          "error": null
         }
       },
       "gfw_check": {
@@ -1675,24 +3732,23 @@
       "ip": "36.213.79.159",
       "port": 1081,
       "scheme": "http",
-      "handshake_ms": 189.3,
-      "passed_count": 3,
+      "handshake_ms": 1207.3,
+      "passed_count": 2,
       "passed_targets": [
-        "xiaomi",
         "huawei",
         "apple"
       ],
       "targets": {
         "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 2228.0,
-          "error": null
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 596.6,
+          "latency_ms": 580.5,
           "error": null
         },
         "microsoft": {
@@ -1704,7 +3760,7 @@
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 4479.2,
+          "latency_ms": 1752.6,
           "error": null
         }
       },
@@ -1713,202 +3769,16 @@
         "accessible": false,
         "status": null,
         "error": "TimeoutError",
-        "latency_ms": 5999.6,
+        "latency_ms": 5998.9,
         "behind_gfw": true
       }
     },
     {
-      "url": "http://47.92.194.235:2080",
-      "ip": "47.92.194.235",
-      "port": 2080,
-      "scheme": "http",
-      "handshake_ms": 195.9,
-      "passed_count": 3,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4389.2,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4389.5,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4384.3,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": 200,
-          "latency_ms": 4379.3,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 4759.1,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://8.130.74.114:999",
-      "ip": "8.130.74.114",
-      "port": 999,
-      "scheme": "http",
-      "handshake_ms": 197.9,
-      "passed_count": 3,
-      "passed_targets": [
-        "xiaomi",
-        "huawei",
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4386.7,
-          "error": null
-        },
-        "huawei": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4383.6,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4382.7,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": 200,
-          "latency_ms": 4391.4,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 4782.9,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://123.119.177.72:8888",
-      "ip": "123.119.177.72",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 191.4,
-      "passed_count": 2,
-      "passed_targets": [
-        "huawei",
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 926.5,
-          "error": null
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 2029.1,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.0,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://221.221.154.122:8888",
-      "ip": "221.221.154.122",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 200.7,
-      "passed_count": 2,
-      "passed_targets": [
-        "huawei",
-        "apple"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 2680.9,
-          "error": null
-        },
-        "microsoft": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "apple": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 2690.7,
-          "error": null
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5000.7,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://61.149.134.158:8888",
-      "ip": "61.149.134.158",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 187.8,
+      "url": "socks5://58.32.16.138:7000",
+      "ip": "58.32.16.138",
+      "port": 7000,
+      "scheme": "socks5",
+      "handshake_ms": 214.7,
       "passed_count": 2,
       "passed_targets": [
         "xiaomi",
@@ -1918,133 +3788,43 @@
         "xiaomi": {
           "success": true,
           "status": 204,
-          "latency_ms": 574.7,
+          "latency_ms": 1550.1,
           "error": null
         },
         "huawei": {
           "success": true,
           "status": 204,
-          "latency_ms": 5025.2,
+          "latency_ms": 887.2,
           "error": null
         },
         "microsoft": {
           "success": false,
           "status": null,
           "latency_ms": null,
-          "error": "Timeout"
+          "error": "ProxyError"
         },
         "apple": {
           "success": false,
           "status": null,
           "latency_ms": null,
-          "error": "Timeout"
+          "error": "ProxyError"
         }
       },
       "gfw_check": {
         "url": "https://www.google.com/generate_204",
         "accessible": false,
         "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.3,
+        "error": "ProxyError",
+        "latency_ms": 779.8,
         "behind_gfw": true
       }
     },
     {
-      "url": "http://111.192.63.229:8888",
-      "ip": "111.192.63.229",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 193.6,
-      "passed_count": 1,
-      "passed_targets": [
-        "xiaomi"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 590.4,
-          "error": null
-        },
-        "huawei": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "microsoft": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "apple": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.1,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://114.250.195.77:8888",
-      "ip": "114.250.195.77",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 187.4,
-      "passed_count": 1,
-      "passed_targets": [
-        "huawei"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 889.4,
-          "error": null
-        },
-        "microsoft": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "apple": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5000.9,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks5://221.176.85.227:1080",
-      "ip": "221.176.85.227",
+      "url": "socks5://120.24.22.233:1080",
+      "ip": "120.24.22.233",
       "port": 1080,
       "scheme": "socks5",
-      "handshake_ms": 226.1,
+      "handshake_ms": 217.6,
       "passed_count": 1,
       "passed_targets": [
         "apple"
@@ -2054,24 +3834,24 @@
           "success": false,
           "status": null,
           "latency_ms": null,
-          "error": "ClientOSError"
+          "error": "ProxyError"
         },
         "huawei": {
           "success": false,
           "status": null,
           "latency_ms": null,
-          "error": "ClientOSError"
+          "error": "ProxyError"
         },
         "microsoft": {
           "success": false,
           "status": null,
           "latency_ms": null,
-          "error": "ClientOSError"
+          "error": "ProxyError"
         },
         "apple": {
           "success": true,
           "status": 200,
-          "latency_ms": 2404.0,
+          "latency_ms": 2286.3,
           "error": null
         }
       },
@@ -2079,107 +3859,17 @@
         "url": "https://www.google.com/generate_204",
         "accessible": false,
         "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 2130.5,
+        "error": "ProxyError",
+        "latency_ms": 1610.2,
         "behind_gfw": true
       }
     },
     {
-      "url": "socks5://221.176.85.230:1080",
-      "ip": "221.176.85.230",
-      "port": 1080,
-      "scheme": "socks5",
-      "handshake_ms": 3283.0,
-      "passed_count": 1,
-      "passed_targets": [
-        "xiaomi"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 1248.5,
-          "error": null
-        },
-        "huawei": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "ClientOSError"
-        },
-        "microsoft": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "ClientOSError"
-        },
-        "apple": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "ClientOSError"
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 455.6,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks5://221.176.85.231:1080",
-      "ip": "221.176.85.231",
-      "port": 1080,
-      "scheme": "socks5",
-      "handshake_ms": 1289.6,
-      "passed_count": 1,
-      "passed_targets": [
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "ClientOSError"
-        },
-        "huawei": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "ClientOSError"
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 1067.7,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "ClientOSError"
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ClientOSError",
-        "latency_ms": 455.6,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://221.221.157.49:8888",
-      "ip": "221.221.157.49",
-      "port": 8888,
+      "url": "http://219.148.171.178:9445",
+      "ip": "219.148.171.178",
+      "port": 9445,
       "scheme": "http",
-      "handshake_ms": 1205.6,
+      "handshake_ms": 4352.1,
       "passed_count": 1,
       "passed_targets": [
         "microsoft"
@@ -2200,7 +3890,7 @@
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 936.1,
+          "latency_ms": 3098.2,
           "error": null
         },
         "apple": {
@@ -2208,141 +3898,6 @@
           "status": null,
           "latency_ms": null,
           "error": "Timeout"
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5002.0,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://221.221.159.97:8888",
-      "ip": "221.221.159.97",
-      "port": 8888,
-      "scheme": "http",
-      "handshake_ms": 180.7,
-      "passed_count": 1,
-      "passed_targets": [
-        "microsoft"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "huawei": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "microsoft": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 4125.9,
-          "error": null
-        },
-        "apple": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "ConnectionTimeoutError",
-        "latency_ms": 5001.3,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "http://36.213.79.159:1080",
-      "ip": "36.213.79.159",
-      "port": 1080,
-      "scheme": "http",
-      "handshake_ms": 1214.1,
-      "passed_count": 1,
-      "passed_targets": [
-        "xiaomi"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 1151.3,
-          "error": null
-        },
-        "huawei": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "microsoft": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "apple": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "TimeoutError",
-        "latency_ms": 6000.2,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks5://36.213.79.159:1080",
-      "ip": "36.213.79.159",
-      "port": 1080,
-      "scheme": "socks5",
-      "handshake_ms": 188.8,
-      "passed_count": 1,
-      "passed_targets": [
-        "apple"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "huawei": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "microsoft": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "apple": {
-          "success": true,
-          "status": 200,
-          "latency_ms": 2032.9,
-          "error": null
         }
       },
       "gfw_check": {
@@ -2355,56 +3910,11 @@
       }
     },
     {
-      "url": "socks5://47.107.48.145:8020",
-      "ip": "47.107.48.145",
-      "port": 8020,
+      "url": "socks5://221.176.85.227:1080",
+      "ip": "221.176.85.227",
+      "port": 1080,
       "scheme": "socks5",
-      "handshake_ms": 195.4,
-      "passed_count": 1,
-      "passed_targets": [
-        "huawei"
-      ],
-      "targets": {
-        "xiaomi": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "huawei": {
-          "success": true,
-          "status": 204,
-          "latency_ms": 857.0,
-          "error": null
-        },
-        "microsoft": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        },
-        "apple": {
-          "success": false,
-          "status": null,
-          "latency_ms": null,
-          "error": "Timeout"
-        }
-      },
-      "gfw_check": {
-        "url": "https://www.google.com/generate_204",
-        "accessible": false,
-        "status": null,
-        "error": "TimeoutError",
-        "latency_ms": 6001.3,
-        "behind_gfw": true
-      }
-    },
-    {
-      "url": "socks5://58.32.16.138:7000",
-      "ip": "58.32.16.138",
-      "port": 7000,
-      "scheme": "socks5",
-      "handshake_ms": 2258.7,
+      "handshake_ms": 227.6,
       "passed_count": 1,
       "passed_targets": [
         "microsoft"
@@ -2414,33 +3924,123 @@
           "success": false,
           "status": null,
           "latency_ms": null,
-          "error": "ProxyError"
+          "error": "ClientOSError"
         },
         "huawei": {
           "success": false,
           "status": null,
           "latency_ms": null,
-          "error": "ProxyError"
+          "error": "ClientOSError"
         },
         "microsoft": {
           "success": true,
           "status": 200,
-          "latency_ms": 1998.9,
+          "latency_ms": 1492.1,
           "error": null
         },
         "apple": {
           "success": false,
           "status": null,
           "latency_ms": null,
-          "error": "ProxyError"
+          "error": "ClientOSError"
         }
       },
       "gfw_check": {
         "url": "https://www.google.com/generate_204",
         "accessible": false,
         "status": null,
-        "error": "TimeoutError",
-        "latency_ms": 5232.9,
+        "error": "ClientOSError",
+        "latency_ms": 3276.9,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://222.212.85.149:5678",
+      "ip": "222.212.85.149",
+      "port": 5678,
+      "scheme": "socks4",
+      "handshake_ms": 1288.1,
+      "passed_count": 1,
+      "passed_targets": [
+        "microsoft"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "huawei": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "microsoft": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 1182.6,
+          "error": null
+        },
+        "apple": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ConnectionTimeoutError",
+        "latency_ms": 5001.2,
+        "behind_gfw": true
+      }
+    },
+    {
+      "url": "socks4://60.217.64.237:35292",
+      "ip": "60.217.64.237",
+      "port": 35292,
+      "scheme": "socks4",
+      "handshake_ms": 238.8,
+      "passed_count": 1,
+      "passed_targets": [
+        "apple"
+      ],
+      "targets": {
+        "xiaomi": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "huawei": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "microsoft": {
+          "success": false,
+          "status": null,
+          "latency_ms": null,
+          "error": "Timeout"
+        },
+        "apple": {
+          "success": true,
+          "status": 200,
+          "latency_ms": 3344.9,
+          "error": null
+        }
+      },
+      "gfw_check": {
+        "url": "https://www.google.com/generate_204",
+        "accessible": false,
+        "status": null,
+        "error": "ConnectionTimeoutError",
+        "latency_ms": 5001.8,
         "behind_gfw": true
       }
     }
